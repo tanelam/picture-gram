@@ -41,7 +41,7 @@ elephant = Picture.create(image_url: url4, title: "Elephants", user_id: 4)
 
 url5 = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/757px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg"
 
-starry_night.create(image_url: url1, title: "Starry Night", user_id: 5)
+starry_night = Picture.create(image_url: url1, title: "Starry Night", user_id: 5)
 
 ##-------PICTURE TAGS-------##
 
