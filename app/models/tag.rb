@@ -1,3 +1,4 @@
 class Tag < ApplicationRecord
-
-end 
+  has_many :picture_tags
+  has_many :pictures, through: :picture_tags
+end
