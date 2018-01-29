@@ -44,3 +44,16 @@ url5 = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Sta
 starry_night.create(image_url: url1, title: "Starry Night", user_id: 5)
 
 ##-------PICTURE TAGS-------##
+
+pic_tag1 = PictureTag.create(picture_id: 1, tag_id: 1)
+pic_tag2 = PictureTag.create(picture_id: 2, tag_id: 2)
+pic_tag3 = PictureTag.create(picture_id: 3, tag_id: 3)
+pic_tag4 = PictureTag.create(picture_id: 4, tag_id: 4)
+pic_tag5 = PictureTag.create(picture_id: 5, tag_id: 5)
+
+##-------COMMENTS-------##
+comm1 = Comment.create(content: "beautiful", user_id: 1, picture_id: 1)
+comm2 = Comment.create(content: "cool", user_id: 2, picture_id: 2)
+comm3 = Comment.create(content: "amazing", user_id: 3, picture_id: 3)
+comm4 = Comment.create(content: "nice", user_id: 4, picture_id: 4)
+comm5 = Comment.create(content: "cute", user_id: 5, picture_id: 5)
