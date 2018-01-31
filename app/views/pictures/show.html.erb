@@ -1,0 +1,18 @@
+<h1><%= @picture.title %></h1>
+
+<img src="<%=@picture.image_url%>" class="thumbnail img-responsive danger"/>
+
+
+<h3>Comments:</h3>
+<ul>
+  <% @picture.comments.map do |comment|  %>
+  <li><b><%= comment.content %></b> by: <%= link_to comment.user.username, comment.user %></li>
+  <% end %>
+</ul>
+
+<%= form_for ([@picture, @comment])  do |f| %>
+  <%= f.text_field :content, placeholder: "Add a comment..." %>
+  <%= f.hidden_field :picture_id, value: @picture.id %>
+  <%= f.hidden_field :user_id, value: session[:user_id] %>
+  <%= f.submit "Comment" %>
+<%  end  %>

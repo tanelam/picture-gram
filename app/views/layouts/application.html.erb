@@ -34,6 +34,7 @@
         <ul class="nav navbar-nav navbar-left" id="ntext">
           <% if session[:user_id] != nil %>
             <li><a href="/pictures">Gallery</a></li>
+            <li><a href="/users/<%=session[:user_id]%>">Your Gallery</a></li>
           <% end %>
         </ul>
 

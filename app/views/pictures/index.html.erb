@@ -2,5 +2,6 @@
 
 
 <% @pictures.each do |picture| %>
-  <img src= "<%=picture.image_url%>", width="500" , height="400"> </img> 
+  <img src= "<%=picture.image_url%>", width="400" , height="300"> </img>
+  <p><%= link_to picture.title, picture_path(picture) %></p>
   <% end %>
