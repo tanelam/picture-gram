@@ -1,0 +1,10 @@
+<h1>Your comments</h1>
+
+<ul>
+  <% @user_comments.each do |comment| %>
+    <li><b><%= comment.content %></b> for <%= link_to comment.picture.title, picture_path(comment.picture)%>
+    <br/>
+    <%= link_to "Delete Comment", user_delete_comments_path, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+
+  <% end %>
+</ul>
