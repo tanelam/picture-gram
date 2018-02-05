@@ -1,5 +1,6 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
+
+@import url('https://fonts.googleapis.com/css?family=Arima+Madurai|Comfortaa|Lobster+Two');
+ /* * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
  *
  * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
@@ -13,3 +14,46 @@
  *= require_tree .
  *= require_self
  */
+ .jumbotron h3 {
+   text-align: center; /* centers the heading */
+   color: grey;
+   font-family: 'Comfortaa', cursive;
+   font-weight: 600;
+ }
+
+ .jumbotron h1 {
+   text-align: center; /* centers the heading */
+   color: grey;
+   font-family: 'Arima Madurai';
+   font-weight: 600;
+ }
+
+ .jumbotron p{
+    color: grey;
+}
+
+.jumbotron p label{
+   color: grey;
+   font-family: 'Arima Madurai';
+}
+
+.jumbotron input{
+   color: grey;
+   font-family: 'Arima Madurai';
+}
+
+.jumbotron a{
+   color: grey;
+}
+
+.nav.navbar-nav.navbar-left li h1 {
+    font-family: 'Lobster Two';
+    color: #5F9EA0;
+    font-size: 1.8em;
+}
+
+.nav.navbar-nav.navbar-right li a{
+    font-family: 'Arima Madurai';
+    color: grey;
+    font-size: 1.0em;
+}

@@ -24,22 +24,23 @@
     <div class = "container" >
     <div class="jumbotron">
 
-      <div id="banner">
-         <h1></h1>
-      </div>
-
     <nav class="navbar navbar-default" id="ntext">
 
       <div class="container-fluid" id="ntext">
         <ul class="nav navbar-nav navbar-left" id="ntext">
-          <% if session[:user_id] != nil %>
+          <li><h1> PhotoGram</h1></li>
+          <!-- <% if session[:user_id] != nil %>
             <li><a href="/pictures">Gallery</a></li>
             <li><a href="/users/<%=session[:user_id]%>">Your Profile</a></li>
-          <% end %>
+          <% end %> -->
         </ul>
 
 <!-- <span class="glyphicon glyphicon-user"></span>  -->
         <ul class="nav navbar-nav navbar-right" id="ntext">
+          <% if session[:user_id] != nil %>
+            <li><a href="/pictures">Gallery</a></li>
+            <li><a href="/users/<%=session[:user_id]%>">Your Profile</a></li>
+          <% end %>
           <% if session[:user_id] == nil %>
           <li><%= link_to "Signup", "/signup"%></li>
           <% end %>
